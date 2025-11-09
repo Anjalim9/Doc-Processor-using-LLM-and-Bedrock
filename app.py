@@ -44,7 +44,10 @@ try:
     nltk.data.find("tokenizers/punkt")
 except Exception:
     nltk.download("punkt")
-
+try:
+    nltk.data.find("tokenizers/punkt_tab")
+except Exception:
+    nltk.download("punkt_tab")
 try:
     nltk.data.find("corpora/wordnet")
 except Exception:
